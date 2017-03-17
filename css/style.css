@@ -1,0 +1,43 @@
+body { background: #f6f6f6; font-family: "Segoe UI" }
+
+.container { background: #fff; min-height: 200px; padding: 0; }
+
+/* Header */
+header { height: 30px; background: #666; text-align: right;
+  line-height: 30px; padding-right: 10px; font-size: 0.85em;
+}
+header ul li { list-style: none; display: inline; }
+header ul li a { color: #ddd; padding: 5px; }
+header ul li a:hover { color: #fff;  border-top: 3px solid #8BC34A;
+  text-decoration: none;
+}
+header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner { position: relative; max-height: 400px; overflow: hidden; }
+.banner-text { position: absolute; width: 40%; top: 50%; left: 10px;
+  transform: translateY(-50%); background: rgba(0, 0, 0, 0.75); color: #eee;
+  padding: 10px;
+}
+.banner-text h2 { color: #8BC34A; margin: 10px 0; }
+.banner-text p { line-height: 1.7em; font-size: 1.1em; }
+
+
+
+/* Footer */
+footer { display: inline-block; width: 100%; }
+footer section { width: 25%; float: left; text-align: center; padding: 20px 0;
+  background: #444; color: #bbb;
+}
+footer h4 { color: #ddd; font-size: 1.1em; }
+footer ul { padding: 0; margin: 0; }
+footer li { list-style: none; line-height: 2em; }
+.credits { height: 30px; width: 100%; background: rgba(0,0,0,0.9);
+    padding: 6px; font-size: 0.8em;
+}
+.credits a { color: white; }
+.credits a:hover { color: #8BC34A; text-decoration: none;
+  border-bottom: 1px dotted #8BC34A;
+}
