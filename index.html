@@ -33,8 +33,47 @@
         </div>
       </section>
 
-      <section class="main">
+      <section class="main col-xs-12">
+        <h3>List your preferences!</h3>
+        <p>Create a list of your preferences in finding your dream home. Select combinations based on location, cost, etc. and we'll try to match and get you the suitable list of houses.</p>
+        <div class="form col-sm-4 col-xs-12">
+          <form>
+            <div class="form-group">
+              <label for="">Location</label>
+              <input type="text"
+                id="location"
+                class="form-control"
+                placeholder="Ex: Fairfax, VA">
+            </div>
+            <div class="form-group">
+              <label for="rooms">Number of bedrooms</label>
+              <select id="rooms"
+                class="form-control" placeholder="Ex: 5">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <input type="text"
+                class="form-control" placeholder="Ex: Condo">
+            </div>
+            <label for="comments">Other preferences</label>
+            <textarea id="comments"
+              class="form-control"
+              rows="8"
+              cols="80"
+              placeholder="Ex: Preferably something close to grocery store"></textarea>
+              <button class="btn btn-success">Add</button>
+          </form>
+        </div>
+        <div class="display col-sm-8 col-xs-12">
 
+        </div>
       </section>
 
       <footer>
@@ -78,7 +117,6 @@
           Designed by <a href="http://venkatp.com" target="blank">Venkat Polumahanti</a>
         </section>
       </footer>
-
     </div>
 
     <!-- Vue.js -->

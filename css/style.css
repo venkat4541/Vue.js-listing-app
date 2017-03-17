@@ -17,13 +17,19 @@ header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
 
 /* Banner */
 .banner { position: relative; max-height: 400px; overflow: hidden; }
-.banner-text { position: absolute; width: 40%; top: 50%; left: 10px;
+.banner-text { min-height: 250px; position: absolute; width: 40%; top: 50%; left: 15px;
   transform: translateY(-50%); background: rgba(0, 0, 0, 0.75); color: #eee;
   padding: 10px;
 }
 .banner-text h2 { color: #8BC34A; margin: 10px 0; }
 .banner-text p { line-height: 1.7em; font-size: 1.1em; }
 
+/* Main content */
+.main { min-height: 200px; margin: 20px 0; }
+.main h3 { color: #8bc34a; font-weight: 700; }
+.main form { padding: 20px 0; }
+.main label { font-size: 1.1em; }
+.main .btn { margin: 20px 0; width: 100%; }
 
 
 /* Footer */
@@ -31,7 +37,7 @@ footer { display: inline-block; width: 100%; }
 footer section { width: 25%; float: left; text-align: center; padding: 20px 0;
   background: #444; color: #bbb;
 }
-footer h4 { color: #ddd; font-size: 1.1em; }
+footer h4 { font-size: 1.2em; color: #8bc34a; }
 footer ul { padding: 0; margin: 0; }
 footer li { list-style: none; line-height: 2em; }
 .credits { height: 30px; width: 100%; background: rgba(0,0,0,0.9);
