@@ -1,33 +1,39 @@
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyDfeJXdWU5fktnQww_tS1xTGG07jXlk33U",
+  authDomain: "vuejs-listing.firebaseapp.com",
+  databaseURL: "https://vuejs-listing.firebaseio.com",
+  storageBucket: "vuejs-listing.appspot.com",
+  messagingSenderId: "602589398058"
+};
+firebase.initializeApp(config);
+
+var prefRef = firebase.database().ref('preferences');
+
 var app = new Vue({
   el: '#app',
   data: {
-    temp: {
+    newPref: {
       comments: '',
       location: '',
       rooms: '',
       type: ''
-    },
-    preferences: [
-      {
-        comments: "Prefer to have a balcony",
-        location: "Fairfax",
-        rooms: 3,
-        type: "apartment"
-      },
-      {
-        comments: "Prefer to have a balcony",
-        location: "McLean",
-        rooms: 3,
-        type: "apartment"
-      }
-    ]
+    }
+  },
+  firebase: {
+    preference: prefRef
   },
   methods: {
     addPref: function() {
-      this.preferences.push(this.temp);
+      prefRef.push(this.newPref)
+      // this.newPref.comments: ''
+      // this.newPref.location: ''
+      // this.newPref.rooms: ''
+      // this.newPref.type: ''
     },
-    rem: function(ind) {
-      this.preferences.splice(ind,1);
+    remPref: function(pref) {
+      prefRef.child(pref['.key']).remove()
     }
   }
 })

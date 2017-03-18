@@ -30,14 +30,14 @@ header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
 .main p { margin-bottom: 30px; }
 .main form { padding: 20px 0; }
 
-.form { border: 1px solid #e6e6e6; }
+.form { border: 1px solid #e6e6e6; margin-bottom: 20px; }
 .form input,
 .form select { height: 30px; padding: 3px 12px;}
 .form label { font-size: 1.1em; font-weight: 500; color: #777; }
 .form .btn { margin-top: 20px; width: 100%; }
 
 
-.display {  }
+.display { padding: 0}
 .display ul { padding: 0; }
 .display li { list-style: none; }
 .display table { border: 1px solid #ddd;}
