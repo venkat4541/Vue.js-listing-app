@@ -27,10 +27,25 @@ header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
 /* Main content */
 .main { min-height: 200px; margin: 20px 0; }
 .main h3 { color: #8bc34a; font-weight: 700; }
+.main p { margin-bottom: 30px; }
 .main form { padding: 20px 0; }
-.main label { font-size: 1.1em; }
-.main .btn { margin: 20px 0; width: 100%; }
 
+.form { border: 1px solid #e6e6e6; }
+.form input,
+.form select { height: 30px; padding: 3px 12px;}
+.form label { font-size: 1.1em; font-weight: 500; color: #777; }
+.form .btn { margin-top: 20px; width: 100%; }
+
+
+.display {  }
+.display ul { padding: 0; }
+.display li { list-style: none; }
+.display table { border: 1px solid #ddd;}
+.display b { font-size: 1.1em; color: #555; font-weight: 500; }
+.display span { color: #777; font-size: 1.2em; cursor: pointer;
+  padding-top: 4px; padding-right: 4px;
+}
+.display span:hover { color: #ff1100; }
 
 /* Footer */
 footer { display: inline-block; width: 100%; }
