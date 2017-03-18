@@ -8,9 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"/>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/fa/css/font-awesome.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -46,7 +43,7 @@
               <b>Time Tested</b>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p> Sed semper pretium felis ut fringilla. Quisque vel nisl nunc. Integer tincidunt nulla nec nunc elementum aliquet. Curabitur non diam nec libero mattis eleifend. Vestibulum et ornare risus.  Etiam semper arcu ut leo bibendum gravida. Maecenas eget nibh. </p>
             </div>
           </div>
           <div id="icon-wrap-2" class="icon-wrap col-sm-3 col-xs-6">
@@ -57,7 +54,7 @@
               <b>Cost efficient</b>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>Sed semper pretium felis ut fringilla. Quisque vel nisl nunc. Integer tincidunt nulla nec nunc elementum aliquet. Curabitur non diam nec libero mattis eleifend. Vestibulum et ornare risus.  Etiam semper arcu ut leo bibendum gravida. Maecenas eget nibh. </p>
             </div>
           </div>
           <div id="icon-wrap-3" class="icon-wrap col-sm-3 col-xs-6">
@@ -68,7 +65,7 @@
               <b>100% Professional</b>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>Sed semper pretium felis ut fringilla. Quisque vel nisl nunc. Integer tincidunt nulla nec nunc elementum aliquet. Curabitur non diam nec libero mattis eleifend. Vestibulum et ornare risus.  Etiam semper arcu ut leo bibendum gravida. Maecenas eget nibh. </p>
             </div>
           </div>
           <div id="icon-wrap-4" class="icon-wrap col-sm-3 col-xs-6">
@@ -79,7 +76,7 @@
               <b>Very Flexible</b>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p> Sed semper pretium felis ut fringilla. Quisque vel nisl nunc. Integer tincidunt nulla nec nunc elementum aliquet. Curabitur non diam nec libero mattis eleifend. Vestibulum et ornare risus.  Etiam semper arcu ut leo bibendum gravida. Maecenas eget nibh. </p>
             </div>
           </div>
         </div>
@@ -93,12 +90,12 @@
         <div class="form col-sm-4 col-xs-12">
           <form v-on:submit.prevent="addPref">
             <div class="form-group">
-              <label for="">Location</label>
-              <input type="text" id="location" class="form-control" placeholder="Ex: Fairfax, VA" v-model="newPref.location">
+              <label for="">Location<span class="red">*</span></label>
+              <input type="text" id="location" class="form-control" placeholder="Ex: Fairfax, VA" required v-model="newPref.location">
             </div>
             <div class="form-group">
-              <label for="rooms">Number of bedrooms</label>
-              <input type="number" id="rooms" class="form-control" placeholder="Ex: 5" v-model="newPref.rooms">
+              <label for="rooms">Number of bedrooms<span class="red">*</span></label>
+              <input type="number" id="rooms" class="form-control" placeholder="Ex: 5" required v-model="newPref.rooms">
             </div>
             <div class="form-group">
               <label for="type">Type</label>
@@ -107,7 +104,7 @@
             <label for="comments">Other preferences</label>
             <textarea id="comments" class="form-control" rows="8" cols="80"
               placeholder="Ex: Preferably something close to grocery store"  v-model="newPref.comments"></textarea>
-              <button class="btn" type="submit">Add</button>
+            <button class="btn" type="submit">Add</button>
           </form>
         </div>
 
@@ -118,7 +115,7 @@
               <table class="table table-striped table-responsive">
                 <tr>
                   <td class="table-head"> <b>Preference {{index+1}}</b> </td>
-                  <td class="text-right"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true" v-on:click="remPref(pref)"></span></td>
+                  <td class="text-right"><abbr title="Delete Preference"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true" v-on:click="remPref(pref)"></span></abbr></td>
                 </tr>
                 <tr>
                   <td class="td-label">Location</td>
@@ -144,39 +141,39 @@
 
       <footer>
         <section class="footer-1">
-          <h4>ipsum</h4>
+          <h4>Laoreet</h4>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li><a href="#">posuere</a></li>
+            <li><a href="#">rhoncus</a></li>
+            <li><a href="#">pulvinar</a></li>
+            <li><a href="#">aliquam</a></li>
           </ul>
         </section>
         <section class="footer-2">
-          <h4>ipsum</h4>
+          <h4>Condimentum</h4>
             <ul>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
+              <li><a href="#">maximus</a></li>
+              <li><a href="#">pharetra</a></li>
+              <li><a href="#">dictum</a></li>
+              <li><a href="#">tristique</a></li>
           </ul>
         </section>
         <section class="footer-3">
-          <h4>ipsum</h4>
+          <h4>Convallis</h4>
             <ul>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
+              <li><a href="#">egestas</a></li>
+              <li><a href="#">sodales</a></li>
+              <li><a href="#">venenatis</a></li>
+              <li><a href="#">dapibus</a></li>
           </ul>
         </section>
         <section class="footer-4">
-          <h4>ipsum</h4>
+          <h4>Maecenas</h4>
             <ul>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
+              <li><a href="#">dapibus</a></li>
+              <li><a href="#">sollicitudin</a></li>
+              <li><a href="#">malesuada</a></li>
+              <li><a href="#">volutpat</a></li>
           </ul>
         </section>
         <section class="credits text-center">
