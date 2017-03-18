@@ -27,7 +27,7 @@ var app = new Vue({
       this.preferences.push(temp);
     },
     rem: function(ind) {
-      this.preferences.splice(ind,1)
+      this.preferences.splice(ind,1);
     }
   }
 })
