@@ -1,9 +1,9 @@
 body { background: #f6f6f6; font-family: "Segoe UI" }
-
+h3 { color: #8bc34a; font-weight: 700; margin-top: 10px;}
 .container { background: #fff; min-height: 200px; padding: 0; }
 
 /* Header */
-header { height: 50px; background: #444; text-align: right;
+header { height: 50px; background: #333; text-align: right;
   line-height: 45px; padding-right: 5px; font-size: 0.9em; overflow: visible; position: relative;
 }
 header span#logo { position: absolute; left: 20px; font-size: 2em; color: #8BC34A; z-index: 999; line-height: 50px;     transition: .3s; }
@@ -24,10 +24,28 @@ header ul li a:hover { color: #8BC34A;  border-top: 4px solid #8BC34A;
 .banner-text h3 { color: #8BC34A; margin: 10px 0; }
 .banner-text p { line-height: 1.7em; font-size: 1em; }
 
+/* Advantages section */
+.advantages { display: inline-block; width: 100%; background: #333; }
+.advantages h3 { margin: 10px 30px; padding-top: 10px; }
+.advantages span { font-size: 4em; color: #fff; padding-bottom: 15px;}
+.advantages b { font-size: 1.3em; color: #fff; }
+.advantages p { color: #fff; text-align: justify; padding: 20px; padding-bottom: 0; }
+.advantages .icons-div { padding:10px 0; }
+.advantages .icon-wrap { padding: 20px; }
+.advantages #icon-wrap-1 { background: rgba(239, 72, 54, 0.75); }
+.advantages #icon-wrap-2 { background: rgba(68, 108, 179, 0.75); }
+.advantages #icon-wrap-3 { background: rgba(30, 130, 76, 0.75); }
+.advantages #icon-wrap-4 { background: rgba(103, 65, 114, 0.75); }
+/*.advantages #icon-wrap-1 { background: #EF4836; }
+.advantages #icon-wrap-2 { background: #446CB3; }
+.advantages #icon-wrap-3 { background: #1E824C; }
+.advantages #icon-wrap-4 { background: #674172; }*/
+
+
 /* Main content */
-.main { min-height: 200px; margin: 20px 0; padding: 0 30px;}
-.main h3 { color: #8bc34a; font-weight: 700; }
-.main p { margin-bottom: 30px; }
+.main { min-height: 200px; margin: 15px 0; padding: 0 30px;}
+.main h3 { margin-bottom: 20px; }
+.main p { margin-bottom: 30px; font-size: 1.1em; }
 .main form { padding: 20px 0; }
 
 .form { border: 1px solid #e6e6e6; margin-bottom: 20px; }
@@ -38,7 +56,7 @@ header ul li a:hover { color: #8BC34A;  border-top: 4px solid #8BC34A;
 .form .btn:hover { background: #8bc34a;  transition: .4s; }
 
 
-.display { padding: 0; padding-left: 30px;}
+.display { padding: 0; padding-left: 30px; }
 .display ul { padding: 0; }
 .display li { list-style: none; transition: all .5s; }
 .display table { border: 1px solid #ddd;}
@@ -53,7 +71,7 @@ header ul li a:hover { color: #8BC34A;  border-top: 4px solid #8BC34A;
 /* Footer */
 footer { display: inline-block; width: 100%; }
 footer section { width: 25%; float: left; text-align: center; padding: 20px 0;
-  background: #444; color: #bbb;
+  background: #333; color: #bbb;
 }
 footer h4 { font-size: 1.2em; color: #8bc34a; }
 footer ul { padding: 0; margin: 0; }
