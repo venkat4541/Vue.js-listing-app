@@ -17,6 +17,7 @@
 
     <div class="container">
       <header>
+        <span id="logo" class="glyphicon glyphicon-home" aria-hidden="true"></span>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
@@ -28,8 +29,8 @@
       <section class="banner">
         <img class="img img-responsive" src="../img/home.jpeg" alt="">
         <div class="banner-text">
-          <h2>Dream home!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+          <h3>Dream home!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="visible-md-lg hidden-xs"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><p class="visible-lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
       </section>
 
@@ -55,33 +56,33 @@
             <label for="comments">Other preferences</label>
             <textarea id="comments" class="form-control" rows="8" cols="80"
               placeholder="Ex: Preferably something close to grocery store"  v-model="newPref.comments"></textarea>
-              <button class="btn btn-success" type="submit">Add</button>
+              <button class="btn" type="submit">Add</button>
           </form>
         </div>
 
-        <!-- Display preferences -->
+        <!-- Display the preferences -->
         <div class="display col-sm-8 col-xs-12">
           <ul>
-            <li v-for="pref in preference"  :key="pref['.key']">
+            <li v-for="(pref, index) in preference"  :key="pref['.key']">
               <table class="table table-striped table-responsive">
                 <tr>
-                  <td> <b>Preference</b> </td>
-                  <td class="text-right"><span class="glyphicon glyphicon-minus-sign glyphicon" aria-hidden="true" v-on:click="remPref(pref)"></span></td>
+                  <td class="table-head"> <b>Preference {{index+1}}</b> </td>
+                  <td class="text-right"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true" v-on:click="remPref(pref)"></span></td>
                 </tr>
                 <tr>
-                  <td>Location</td>
+                  <td class="td-label">Location</td>
                   <td>{{pref.location}}</td>
                 </tr>
                 <tr>
-                  <td>Type of house</td>
+                  <td class="td-label">House Type</td>
                   <td>{{pref.type}}</td>
                 </tr>
                 <tr>
-                  <td>No. of rooms</td>
+                  <td class="td-label">Rooms</td>
                   <td>{{pref.rooms}}</td>
                 </tr>
                 <tr>
-                  <td>Comments</td>
+                  <td class="td-label">Comments</td>
                   <td>{{pref.comments}}</td>
                 </tr>
               </table>

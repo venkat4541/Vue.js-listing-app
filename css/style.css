@@ -3,29 +3,29 @@ body { background: #f6f6f6; font-family: "Segoe UI" }
 .container { background: #fff; min-height: 200px; padding: 0; }
 
 /* Header */
-header { height: 30px; background: #666; text-align: right;
-  line-height: 30px; padding-right: 10px; font-size: 0.85em;
+header { height: 50px; background: #444; text-align: right;
+  line-height: 45px; padding-right: 5px; font-size: 0.9em; overflow: visible; position: relative;
 }
+header span#logo { position: absolute; left: 20px; font-size: 2em; color: #8BC34A; z-index: 999; line-height: 50px;     transition: .3s; }
+header span#logo:hover { transform: scale(1.3); transition: .2s; }
+header ul { margin-bottom: 0; padding-left: 0; }
 header ul li { list-style: none; display: inline; }
-header ul li a { color: #ddd; padding: 5px; }
-header ul li a:hover { color: #fff;  border-top: 3px solid #8BC34A;
-  text-decoration: none;
-}
-header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
-  text-decoration: none;
+header ul li a { color: #ddd; padding: 10px; font-weight: 600; transition: all .2s; }
+header ul li a:hover { color: #8BC34A;  border-top: 4px solid #8BC34A;
+  text-decoration: none;  transition: all .3s;
 }
 
 /* Banner */
 .banner { position: relative; max-height: 400px; overflow: hidden; }
-.banner-text { min-height: 250px; position: absolute; width: 40%; top: 50%; left: 15px;
+.banner-text { min-height: 250px; position: absolute; width: 40%; top: 50%; left: 5%;
   transform: translateY(-50%); background: rgba(0, 0, 0, 0.75); color: #eee;
   padding: 10px;
 }
-.banner-text h2 { color: #8BC34A; margin: 10px 0; }
-.banner-text p { line-height: 1.7em; font-size: 1.1em; }
+.banner-text h3 { color: #8BC34A; margin: 10px 0; }
+.banner-text p { line-height: 1.7em; font-size: 1em; }
 
 /* Main content */
-.main { min-height: 200px; margin: 20px 0; }
+.main { min-height: 200px; margin: 20px 0; padding: 0 30px;}
 .main h3 { color: #8bc34a; font-weight: 700; }
 .main p { margin-bottom: 30px; }
 .main form { padding: 20px 0; }
@@ -34,18 +34,21 @@ header ul li a:active { color: #fff;  border-top: 3px solid #8BC34A;
 .form input,
 .form select { height: 30px; padding: 3px 12px;}
 .form label { font-size: 1.1em; font-weight: 500; color: #777; }
-.form .btn { margin-top: 20px; width: 100%; }
+.form .btn { margin-top: 20px; width: 100%; background: #eee;  transition: .4s; }
+.form .btn:hover { background: #8bc34a;  transition: .4s; }
 
 
-.display { padding: 0}
+.display { padding: 0; padding-left: 30px;}
 .display ul { padding: 0; }
-.display li { list-style: none; }
+.display li { list-style: none; transition: all .5s; }
 .display table { border: 1px solid #ddd;}
+.display table td.td-label{ width: 30%;}
+.table>tbody>tr>td { vertical-align: middle; }
 .display b { font-size: 1.1em; color: #555; font-weight: 500; }
 .display span { color: #777; font-size: 1.2em; cursor: pointer;
-  padding-top: 4px; padding-right: 4px;
+  padding-top: 4px; padding-right: 4px; transition: 1s;
 }
-.display span:hover { color: #ff1100; }
+.display span:hover { color: #ff1100;  transition: 1s; }
 
 /* Footer */
 footer { display: inline-block; width: 100%; }
@@ -58,7 +61,21 @@ footer li { list-style: none; line-height: 2em; }
 .credits { height: 30px; width: 100%; background: rgba(0,0,0,0.9);
     padding: 6px; font-size: 0.8em;
 }
-.credits a { color: white; }
+.credits a { color: white;  transition: .4s; }
 .credits a:hover { color: #8BC34A; text-decoration: none;
-  border-bottom: 1px dotted #8BC34A;
+  border-bottom: 1px dotted #8BC34A;  transition: .4s;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .display { padding-left: 0; }
+}
+
+@media (max-width: 550px) {
+  .banner { position: relative; }
+  .banner-text {
+    top: 0; left: 0; bottom: 0; background: rgba(0, 0, 0, 0.65); color: #eee;
+    font-size: 1em; width: 100%; transform: none; height: 100%;
+  }
+  td.td-label{ width: 40%; }
 }
