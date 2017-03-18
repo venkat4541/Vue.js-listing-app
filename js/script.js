@@ -24,7 +24,7 @@ var app = new Vue({
   },
   methods: {
     addPref: function() {
-      this.preferences.push(temp);
+      this.preferences.push(this.temp);
     },
     rem: function(ind) {
       this.preferences.splice(ind,1);

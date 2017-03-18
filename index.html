@@ -50,11 +50,11 @@
             </div>
             <div class="form-group">
               <label for="type">Type</label>
-              <input type="text" id="type" class="form-control" placeholder="Ex: Condo">
+              <input type="text" id="type" class="form-control" placeholder="Ex: Condo" v-model="temp.type">
             </div>
             <label for="comments">Other preferences</label>
             <textarea id="comments" class="form-control" rows="8" cols="80"
-              placeholder="Ex: Preferably something close to grocery store"  ></textarea>
+              placeholder="Ex: Preferably something close to grocery store"  v-model="temp.comments"></textarea>
               <button class="btn btn-success" type="submit">Add</button>
           </form>
         </div>
